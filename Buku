@@ -1,0 +1,127 @@
+class Buku:
+
+def __init__ (self, judul, penulis, genre, status):
+
+self.judul = judul
+
+self.penulis = penulis
+
+self.genre = genre
+
+self.status = status
+
+def __str__ (self): return f(self.judul (self.penulis) ((self.genre)) Status: (self.status)"
+
+2. buat kelas perpustakaan:
+
+class Perpustakaan:
+
+def __init__ (self):
+   self.koleksi buku = []
+
+def tampilkan_buku(self):
+
+if self.koleksi buku:
+
+print(" Daftar Buku for buku in self.koleksi buku:
+
+print(buku)
+
+print("Koleksi bukų masih kosong.")
+
+else:
+
+def cari buku(self, judul):
+
+for buku in self.koleksi buku:
+
+11 buku.judul.lower()judul.lower(): print(buku)
+
+return print("Buku dengan judul (judul) tidak ditemukan,")
+
+def pinjam buku(self, buku, anggota):
+
+if buku.status =="Tersedia":
+   buku.status= "Dipinjan"
+
+anggota.buku pinjaman.append(buku) print("Buku (buku, judul) berhasil dipinjam oleh (anggota.nama).")
+
+elses
+
+print(f Buku (boku.judul) tidak terseia untuk dipinjam.")
+
+class Anggota:
+
+def __init__(self, nama, ID):
+
+self.nama =nama
+
+self.ID = ID
+
+self.buku pinjaman []
+
+def tampilkan buku pinjaman(self): 1f self.buku pinjaman:
+
+print(f "Buku Pinjaman (self.nama))
+
+for buku in self.buku pinjaman:
+
+print(buku)
+
+else:
+
+print(f"[self.nama) tidak memiliki buku pinjaman."
+
+def main():
+
+#Buat beberapa buku
+
+buku= Buku("Bumi", "Tere Liye", "Fiksi", "Tersedia")
+
+buku= Buku("Laskar Pelangi", Andrea Hirata", "Fiksi", "Tersedia") buku3 Buku("Filosofi Terbang", "Dewi Lestari", "Fiksi", "Dipinjan")
+
+#Buat perpustakaan dan anggota
+
+perpustakaan=Perpustakaan()
+
+perpustakaan.koleksi buku.extend([bukul, buku2, buku3])
+
+anggotal=Anggota ("Andi", 12345)
+
+anggota2=Anggota ("Budi", 56789)
+
+Jalankan program
+
+print("\n Menu Perpustakaan)
+
+print("1. Tampilkan Daftar Buku")
+
+print("2. Cari Buku")
+ print("3. Pinjam Buku")
+
+print("4. Kembalikan")
+
+angka __int__(input("pilih menu"))
+
+If angka ==1:
+
+perpustakaan tampilkan buku();
+
+elif angka ==2:
+
+Judul input("input judul buku:") perpustakaan.cari buku(judul);
+
+elif angka == 3:
+
+buku input("buku yang di pinjam:") agota input("input nama anggota :")
+
+perpustakaan.pinjam buku(buku, anggota)
+elif angka == 4:
+else;
+
+print("anda salah pilih")
+
+name="main":
+
+main();
+
